@@ -1,5 +1,3 @@
--- lua/options.lua
-
 local opt = vim.opt
 
 -- General
