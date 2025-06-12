@@ -8,6 +8,6 @@ return {
     },
     lazy = false, 
     opts = {
-        window = { width = 25 }
+        window = { width = 30 }
     },
 }
