@@ -37,7 +37,4 @@ opt.sidescrolloff = 8
 opt.splitright = true             -- Vertical splits to the right
 opt.splitbelow = true             -- Horizontal splits below
 
--- File encoding
-opt.encoding = "utf-8"
-opt.fileencoding = "utf-8"
 

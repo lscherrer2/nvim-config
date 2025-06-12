@@ -8,6 +8,6 @@ return {
     },
     lazy = false, 
     opts = {
-       -- insert options here 
+        window = { width = 25 }
     },
 }
