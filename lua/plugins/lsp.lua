@@ -26,6 +26,18 @@ return {
             callback = function(ev)
                 local opts = { buffer = ev.buf }
                 local map = vim.keymap.set
+
+                -- lsp keymaps
+                map("n", "gd", vim.lsp.buf.definition, opts)
+                map("n", "K", vim.lsp.buf.hover, opts)
+                map("n", "<leader>rn", vim.lsp.buf.rename, opts)
+                map("n", "<leader>ca", vim.lsp.buf.code_action, opts)
+                map("n", "<leader>e", vim.diagnostic.open_float)        -- Show error message under cursor
+                map("n", "[d", vim.diagnostic.goto_prev)               -- Jump to previous diagnostic
+                map("n", "]d", vim.diagnostic.goto_next)               -- Jump to next diagnostic
+                map("n", "<leader>q", vim.diagnostic.setloclist)       -- Put all diagnostics in loclist
+                map("n", "<leader>f", function() vim.lsp.buf.format { async = true } end, opts)  -- Format
+
             end,
 
         })
