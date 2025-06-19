@@ -26,7 +26,7 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<leader>r", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>", opts)
 
 -- File explorer
-keymap("n", "<leader>e", ":Ex<CR>", opts)
+keymap("n", "<leader>pv", ":Ex<CR>", opts)
 
 -- Copy to system clipboard
 keymap("v", "<leader>y", '"+y', opts)
