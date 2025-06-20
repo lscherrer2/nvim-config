@@ -1,6 +1,5 @@
 -- Set leader key
 vim.g.mapleader = " "
-vim.g.maplocalleader = " "
 
 local keymap = vim.keymap.set
 local opts = { noremap = true, silent = true }
@@ -49,3 +48,7 @@ keymap("t", "<ESC>", "<C-\\><C-n>", opts)
 
 -- Terminal
 keymap("n", "<leader>t", ":terminal<CR>", opts)
+
+-- neotree
+keymap("n", "<leader>pv", ":Neotree filesystem reveal left<CR>", { desc = "Open Neo-Tree" } )
+

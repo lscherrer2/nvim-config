@@ -28,6 +28,8 @@ return {
             snippet = {
                 expand = function(args)
                     require("luasnip").lsp_expand(args.body)
+                    local cmp_autopairs = require("nvim-autopairs.completion.cmp")
+                    cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
                 end,
             },
             sources = cmp.config.sources({
